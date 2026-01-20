@@ -4,7 +4,6 @@ import java.util.*;
 class Dish {
     String name;
     double price;
-
     Dish(String name, double price) {
         this.name = name;
         this.price = price;
@@ -28,7 +27,6 @@ public class Main {
             dishes[i] = new Dish(name, price);
             total+=price;
         }
-
         System.out.println("\n------- Restaurant Menu -------");
         for (int i = 0; i < n; i++) {
             System.out.println((i + 1) + ". " + dishes[i].name + " - Rs."+dishes[i].price);
